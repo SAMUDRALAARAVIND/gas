@@ -1,0 +1,43 @@
+test.js handles all apis
+packages and orders folders will contain all my own apis
+
+
+Throughout project Email willbe used for distinguition between customers;
+
+User registration:
+    enters an email fullfills a 6 digit code verfication then creates a password on his own after reaching requirements
+    of password rules he/she gets logged in
+User Login:
+    Enters email and password all the time to Login.
+Before placing an order one has to update and his/her information with used
+   i.e Location,mobile verification.
+After compleation of above things one can start placing orders.
+
+
+Intially our service entirely focuses on 19KG gas cylinders.
+
+
+
+
+
+Routes:
+   domain/users -->users are of two types
+   1) customers
+   2) deliveryguys
+   domain/customers -->will hndle all things related to customers
+   domain/delivery/  -->will handle all things related to deliveryguys
+   1)domain/customers
+      i)domain/customers/login -->for customer login
+      ii)domain/customers/signup -->for customer signup
+      iii) domain/customers/home -->customers home page (session enabled)
+      iv) domain/customers/myorders -->orders of a particular customer (session enabled)
+      v)domain/customers/cart -->cart list of a particular customer(session enabled)
+      vi)domain/customers/products -->products page(session enabled)
+      vii)domain/customers/myorders/:orderID -->to view the status of an order(session enabled)
+         in (vii) checkout weather orderID and sessionId matches else return them to login page
+  2)domain/delivery/
+    i)domain/delivery/login -->ogin form for deliveryguys
+    ii)domain/delivery/signup -->signup form for deliveryguys
+    iii) domain/delivery/home -->homepage for deliveryguys(session enabled)
+    iv) domain/delivery/mywork -->to checkout his work (session enabled)
+    v) domain/delivery/findorders -->to findout new orders (session enabled)
