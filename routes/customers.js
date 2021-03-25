@@ -7,7 +7,7 @@ const {cshandler,clhandler} = require("./../packages/cshandler")
 router.use(bodyParser.urlencoded({extended:true}));
 
 router.use(cookieParser());
-router.use(session({secret: "Shh, its a secret!"}));
+//router.use(session({secret: "Shh, its a secret!"}));
 
 router.use(express.static('public'));
 
