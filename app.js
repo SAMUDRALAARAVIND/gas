@@ -14,7 +14,7 @@ const delivery = require("./routes/delivery")
 
 app.use("/delivery",delivery)
 app.use("/customers",customers);
-app.use(session({secret: "Shh, its a secret!"}));
+//app.use(session({secret: "Shh, its a secret!"}));
 
 app.use(express.static('public'));
 const port = process.env.port  || 8080;
