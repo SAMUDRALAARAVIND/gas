@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended:true}));
 router.use(express.static('public'));
 router.use(cookieParser());
-router.use(session({secret: "Shh, its a secret!"}));
+//router.use(session({secret: "Shh, its a secret!"}));
 
 
 router.get("/login",function(req,resp){
