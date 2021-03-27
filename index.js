@@ -17,7 +17,7 @@ app.use("/customers",customers);
 //app.use(session({secret: "Shh, its a secret!"}));
 
 app.use(express.static('public'));
-const port = process.env.port ;
+const port = process.env.PORT ;
 app.set("views","views");
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
